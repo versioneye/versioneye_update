@@ -16,3 +16,14 @@ echo ""
 echo "Dependencies: $dep_number"
 echo "Outdated: $out_number"
 echo "License violations: $violations"
+echo ""
+
+if [ violations == 0 ]; then
+  echo "exit with status code 0"
+  exit 0
+else
+  echo "exit with status code 2"
+  exit 2 
+fi
+
+echo "Never ever!"
