@@ -24,4 +24,12 @@ The `update.sh` script is a very simple shell script which is updating an existi
 ./update.sh <PROJECT_FILE>
 ```
 
-to update an existing project at VersionEye with a project file. VersionEye will parse the uploaded project file and return a JSON object. The script will out put the number of dependencies, the number of out-dated dependencies and the number of license violations if you have a license whitelist on the server. 
+to update an existing project at VersionEye with a project file. For example: 
+
+```
+./update.sh composer.lock
+```
+
+VersionEye will parse the uploaded project file and return a JSON object. The script will out put the number of dependencies, the number of out-dated dependencies and the number of license violations if you have a license whitelist on the server. The result looks like that: 
+
+![VersionEye Dependencies](images/update-sh.png)
