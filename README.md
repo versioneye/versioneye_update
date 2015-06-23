@@ -4,6 +4,10 @@
 
 However. Not everybody is using GitHub/Bitbucket. Through the [VersionEye API](https://www.versioneye.com/api/) you can create/update projects as well and take advantage of the VersionEye infrastructure. Assume you created already a project through file upload or via the URL feature. Now you want to update the project every day automatically with your current project file to get the notifications. That's the mission of this project. 
 
+## Requirements 
+
+[jq](http://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor. Available for Linux, Mac OS X and Windows. Please make sure that [jq](http://stedolan.github.io/jq/) is installed before you run the `update.sh` script. 
+
 ## Configuraiton 
 
 Open the `update.sh` script and replace `<YOUR_SECRET_API_KEY>` in line 4 with your actual API KEY. You can get it from [here](https://www.versioneye.com/settings/api). Replace `<YOUR_PROJECT_ID>` in line 5 with the project ID from your VersionEye project. If you are using VersionEye Enterprise please adjust the `VERSIONEYE_SERVER` path in line 3 as well. 
