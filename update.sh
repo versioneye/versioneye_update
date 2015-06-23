@@ -8,7 +8,7 @@ API_KEY=<YOUR_SECRET_API_KEY> # Get it from here: https://www.versioneye.com/set
 json=$( curl -F name=project_file -F project_file=@$1 "${VERSIONEYE_SERVER}/api/v2/projects/${PROJECT_ID}?api_key=${API_KEY}" )
 
 project_id=$(echo $json | jq '.id' | sed 's/"//g' )
-dep_count =$(echo $json | jq '.dep_number')
+dep_number=$(echo $json | jq '.dep_number')
 out_number=$(echo $json | jq '.out_number')
 violations=$(echo $json | jq '.licenses_red')
 
