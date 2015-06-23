@@ -60,6 +60,10 @@ Currently VersionEye supports 11 package managers. You can throw any of this pro
  - *.sbt 
  
 For Maven multi module projects (reactor builds) please use the [VersionEye Maven Plugin](https://github.com/versioneye/versioneye_maven_plugin). 
+
+## Continuous Integration Server
+
+This script is ment to be executed on your Continuous Integration Server on each build. Ideally you update your VersionEye project with the current project file on each build. 
  
 ## Feedback 
 
