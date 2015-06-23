@@ -1,6 +1,6 @@
 # VersionEye Update
 
-[VersionEye](https://www.versioneye.com) can monitor your project on GitHub/Bitbucket and notify you about out-dated dependencies and license violations. The integration via the GitHub/Bitbucket API works very well and is very convenient. 
+[VersionEye](https://www.versioneye.com) can monitor your project on GitHub/Bitbucket and notify you about out-dated dependencies and [license violations](http://blog.versioneye.com/2014/09/15/license-whitelist/). The integration via the GitHub/Bitbucket API works very well and is very convenient. 
 
 However. Not everybody is using GitHub/Bitbucket. Through the [VersionEye API](https://www.versioneye.com/api/) you can create/update projects as well and take advantage of the VersionEye infrastructure. Assume you created already a project through file upload or via the URL feature. Now you want to update the project every day automatically with your current project file to get the notifications. That's the mission of this project. 
 
@@ -35,7 +35,7 @@ to update an existing project at VersionEye with a project file. For example:
 ./update.sh composer.lock
 ```
 
-VersionEye will parse the uploaded project file and return a JSON object. The script will output the number of dependencies, the number of out-dated dependencies and the number of license violations if you have a license whitelist on the server. The result looks like that: 
+VersionEye will parse the uploaded project file and return a JSON object. The script will output the number of dependencies, the number of out-dated dependencies and the number of license violations if you have a [license whitelist](http://blog.versioneye.com/2014/09/15/license-whitelist/) assigned to your project at VersionEye. The result looks like that: 
 
 ![VersionEye Dependencies](images/update-sh.png)
 
