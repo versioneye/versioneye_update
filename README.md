@@ -18,7 +18,7 @@ PROJECT_ID=<YOUR_PROJECT_ID>
 
 ## Usage
 
-The `update.sh` script is a very simple shell script which is updating an existing project at VersionEye with a current project file. Simply run this command
+The `update.sh` script is a very simple shell script which is updating an existing project at VersionEye with a current project file via CURL. Simply run this command
 
 ```
 ./update.sh <PROJECT_FILE>
