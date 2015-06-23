@@ -33,3 +33,29 @@ to update an existing project at VersionEye with a project file. For example:
 VersionEye will parse the uploaded project file and return a JSON object. The script will output the number of dependencies, the number of out-dated dependencies and the number of license violations if you have a license whitelist on the server. The result looks like that: 
 
 ![VersionEye Dependencies](images/update-sh.png)
+
+## Supported project files 
+
+Currently VersionEye supports 11 package managers. You can throw any of this project files against the [VersionEye API](https://www.versioneye.com/api/). 
+
+ - Gemfile 
+ - Gemfile.lock 
+ - Podfile 
+ - Podfile.lock 
+ - package.json 
+ - composer.json 
+ - composer.lock
+ - bower.json 
+ - requirements.txt 
+ - setup.py 
+ - biicode.conf 
+ - pom.xml 
+ - project.clj 
+ - *.gradle 
+ - *.sbt 
+ 
+For Maven multi module projects (reactor builds) please use the [VersionEye Maven Plugin](https://github.com/versioneye/versioneye_maven_plugin). 
+ 
+## Feedback 
+
+For feedback please open a ticket here on GitHub or contact us on [Twitter](https://twitter.com/versioneye). 
