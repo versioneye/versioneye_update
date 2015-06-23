@@ -63,7 +63,7 @@ For Maven multi module projects (reactor builds) please use the [VersionEye Mave
 
 ## Continuous Integration Server
 
-This script is ment to be executed on your Continuous Integration Server on each build. Ideally you update your VersionEye project with the current project file on each build. 
+This script is ment to be executed on your Continuous Integration Server on each build. Ideally you update your VersionEye project with the current project file on each build. The `update.sh` script exits with status code 0 if there are 0 violations of the license whitelist. Otherwise it exits with status code 2. 
  
 ## Feedback 
 
