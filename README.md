@@ -6,7 +6,8 @@ However. Not everybody is using GitHub/Bitbucket. Through the [VersionEye API](h
 
 ## Requirements 
 
-[jq](http://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor. Available for Linux, Mac OS X and Windows. Please make sure that [jq](http://stedolan.github.io/jq/) is installed before you run the `update.sh` script. 
+- [CURL](http://curl.haxx.se/), an open source command line tool and library for transferring data with URL syntax.
+- [jq](http://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor. Available for Linux, Mac OS X and Windows. Please make sure that [jq](http://stedolan.github.io/jq/) is installed before you run the `update.sh` script. 
 
 ## Configuraiton 
 
