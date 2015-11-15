@@ -9,7 +9,7 @@ However. Not everybody is using GitHub/Bitbucket. Through the [VersionEye API](h
 - [CURL](http://curl.haxx.se/), an open source command line tool and library for transferring data with URL syntax.
 - [jq](http://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor. Available for Linux, Mac OS X and Windows. Please make sure that [jq](http://stedolan.github.io/jq/) is installed before you run the `update.sh` script. 
 
-## Configuraiton 
+## Configuration 
 
 Open the `update.sh` script and replace `<YOUR_SECRET_API_KEY>` in line 4 with your actual API KEY. You can get it from [here](https://www.versioneye.com/settings/api). Replace `<YOUR_PROJECT_ID>` in line 5 with the project ID from your VersionEye project. If you are using VersionEye Enterprise please adjust the `VERSIONEYE_SERVER` path in line 3 as well. 
 
